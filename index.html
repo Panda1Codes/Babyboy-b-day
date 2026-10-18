@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff1f5">
+<title>For my Babyboy ♡</title>
+<style>
+:root{--pink:#ff5f9a;--pink2:#ffd5e5;--cream:#fff8f4;--ink:#48283f;--lilac:#e7dcff;--yellow:#ffe7a0;--berry:#a43b72;--mint:#d8f4e7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 12% 8%,#ffe5ef 0,transparent 26%),radial-gradient(circle at 90% 22%,#e9e0ff 0,transparent 28%),var(--cream);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;overflow-x:hidden}
+button,input{font:inherit}button{cursor:pointer}
+.bg-hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.float{position:absolute;bottom:-50px;opacity:.42;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.wrap{width:min(100% - 32px,980px);margin:auto}
+.topbar{width:min(100% - 28px,1000px);margin:14px auto 0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid #fff;background:#ffffffb8;backdrop-filter:blur(12px);border-radius:999px;box-shadow:0 8px 25px #783a5b0c}
+.brand{font-weight:1000;color:var(--berry);letter-spacing:-.04em}.brand span{color:var(--pink)}
+.navlinks{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{font-size:.78rem;font-weight:800;text-decoration:none;color:#8d5575;padding:8px 10px;border-radius:999px}
+.navlinks a:hover{background:#ffe3ed}
+.hero{min-height:86svh;display:grid;place-items:center;padding:48px 0 60px;position:relative}
+.hero-panel{width:100%;max-width:900px;text-align:center;position:relative;padding:clamp(30px,7vw,70px) 18px 44px;border-radius:38px;border:2px solid white;background:linear-gradient(135deg,#fff9fbf2,#f4edfff2 55%,#fff4ddf2);box-shadow:0 18px 0 #f5c9db,0 28px 65px #8a3e6414;overflow:hidden}
+.hero-panel:before,.hero-panel:after{position:absolute;font-size:clamp(2.5rem,7vw,5rem);opacity:.8;transform:rotate(-14deg)}
+.hero-panel:before{content:"✿";left:5%;top:7%;color:#ff8ab1}.hero-panel:after{content:"♡";right:6%;bottom:8%;color:#a58be9;transform:rotate(15deg)}
+.sticker{display:inline-block;background:var(--yellow);border:2px solid white;border-radius:999px;padding:9px 16px;font-size:.8rem;font-weight:900;box-shadow:3px 5px 0 #f0c76e;transform:rotate(-3deg)}
+h1{font-size:clamp(2.8rem,10vw,6.5rem);line-height:.9;letter-spacing:-.075em;margin:28px 0 18px;color:#e84f8a;text-shadow:3px 4px 0 #fff}
+h1 span{display:block;color:#7753ad;margin-top:12px}
+.hero p{max-width:570px;margin:0 auto 24px;font-size:1.06rem;line-height:1.75}
+.cta,.secondary{border:0;border-radius:999px;padding:14px 22px;font-weight:900;transition:transform .15s,box-shadow .15s}
+.cta{background:linear-gradient(135deg,#ff5f9a,#e84f8a);color:white;box-shadow:0 6px 0 #c63d76,0 12px 24px #ed5d951f}
+.secondary{background:white;color:#a43b72;border:2px solid #ffd0df;box-shadow:0 4px 0 #ffd0df}
+.cta:active,.secondary:active{transform:translateY(3px);box-shadow:none}
+.mini-note{font-size:.83rem!important;color:#997b89;margin-top:17px!important}
+.love-banner{display:inline-block;margin:28px auto 0;padding:13px 22px;border-radius:18px;background:#fff;border:2px dashed #ff8ab1;color:#d93f7b;font-weight:1000;font-size:clamp(1.25rem,5vw,2.15rem);letter-spacing:.02em;transform:rotate(2deg);box-shadow:5px 6px 0 #ffd7e6}
+section{padding:58px 0}
+.section-head{text-align:center;margin:0 auto 28px;max-width:680px}
+.kicker{text-transform:uppercase;letter-spacing:.17em;color:#cf5486;font-size:.72rem;font-weight:1000}
+h2{font-size:clamp(1.9rem,6vw,3.2rem);margin:8px 0 10px;letter-spacing:-.055em;line-height:1.04}
+.sub{line-height:1.7;color:#8c6c7b;margin:0 auto;max-width:590px}
+.card{background:#fff;border:2px solid white;border-radius:28px;padding:clamp(20px,5vw,38px);box-shadow:8px 10px 0 #f5d5e3,0 18px 38px #8a3e640b}
+.letter-card{position:relative;max-width:780px;margin:auto;background:linear-gradient(135deg,#fffdf8,#fff5f8);border-color:#ffe2ec}
+.letter-card:before{content:"♡";position:absolute;right:22px;top:12px;color:#ff8fb0;font-size:2rem;transform:rotate(15deg)}
+.letter-card p{line-height:1.95;font-size:1.02rem;white-space:pre-line}
+.signature{font-family:Georgia,serif;font-style:italic;font-size:1.35rem;color:#d95383}
+.letter-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.letter-tabs button.active{background:#e95787;color:#fff;border-color:#e95787}
+.letter-language{display:block}.letter-language.active{display:block}
+.story-board{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}
+.story-note{background:#fff;border:2px solid white;border-radius:28px;padding:clamp(22px,5vw,34px);box-shadow:8px 9px 0 #e7dcff;position:relative;overflow:hidden}
+.story-note.pink{background:#fff0f6;box-shadow:8px 9px 0 #f5c7db}
+.story-note.lilac{background:#f3eeff;box-shadow:8px 9px 0 #d7c8fa}
+.story-note .scribble{font-size:2.5rem;line-height:1}
+.story-note h3{font-size:1.35rem;margin:12px 0 8px;letter-spacing:-.03em}
+.story-note p{line-height:1.8;margin:0;color:#77586c}
+.story-note .tape{position:absolute;top:12px;right:18px;background:#ffe7a0;width:60px;height:18px;transform:rotate(8deg);opacity:.8}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{padding:8px 12px;background:#fff;border:1px solid #f7d5e3;border-radius:999px;font-size:.82rem;font-weight:800;color:#a44b76}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.photo-card{background:white;padding:11px 11px 17px;border-radius:18px;box-shadow:0 10px 25px #7e506014;transform:rotate(-3deg);border:1px solid #f7e3eb}
+.photo-card:nth-child(2){transform:rotate(3deg);margin-top:25px}
+.photo-card:nth-child(3){transform:rotate(-1deg)}
+.photo-frame{aspect-ratio:4/5;border-radius:12px;background:linear-gradient(145deg,#ffd8e5,#f0e5ff);display:grid;place-items:center;overflow:hidden;color:#b05b7d;text-align:center;padding:12px;position:relative}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+.photo-frame .placeholder{font-size:2.3rem;position:relative;z-index:0}
+.photo-label{text-align:center;padding-top:13px;font-family:Georgia,serif;font-size:.96rem}
+.playlist{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.track{display:flex;align-items:center;gap:13px;background:#fff;border:2px solid white;border-radius:22px;padding:16px;text-decoration:none;color:var(--ink);box-shadow:0 5px 0 #f3d5e3;transition:transform .15s}
+.track:hover{transform:translateY(-3px)}.track:active{transform:translateY(3px);box-shadow:none}
+.track-icon{width:50px;height:50px;flex:0 0 50px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,#ffe1eb,#e9ddff);font-size:1.5rem}
+.track strong{display:block;font-size:.95rem}.track small{display:block;color:#9a7888;margin-top:4px;line-height:1.4}
+.fun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:24px}
+.fun-card{background:#fff;border:2px solid white;border-radius:24px;padding:22px 15px;text-align:center;box-shadow:0 7px 0 #f0d6e3}
+.fun-card:nth-child(2){background:#f4efff;box-shadow:0 7px 0 #d9cafa}.fun-card:nth-child(3){background:#fff0f6}
+.fun-card .emoji{font-size:2.25rem}.fun-card h3{font-size:1rem;margin:10px 0 7px}.fun-card p{font-size:.86rem;color:#8c6c7b;line-height:1.55}
+.fun-result{min-height:50px;margin:20px auto 0;max-width:620px;padding:16px;background:#fff;border:2px dashed #ffb7ce;border-radius:18px;line-height:1.7;text-align:center}
+.photo-help{text-align:center;font-size:.83rem;color:#967c89;margin-top:22px;line-height:1.6}
+.countdown-card{text-align:center;background:linear-gradient(135deg,#fff0f5,#f5efff);border:2px solid white;box-shadow:8px 10px 0 #d9cafa,0 18px 38px #8a3e640b}
+.countdown{display:flex;justify-content:center;gap:10px;margin:26px 0;flex-wrap:wrap}
+.timebox{background:white;border:2px solid #ffe0e9;border-radius:18px;padding:15px 10px;min-width:72px;box-shadow:0 4px 0 #f8d3e0}
+.timebox strong{display:block;font-size:clamp(1.5rem,5vw,2.2rem);color:#e95787}
+.timebox span{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#997b89}
+.smallprint{font-size:.78rem;color:#997b89;line-height:1.5}
+.surprise{text-align:center;background:linear-gradient(135deg,#fff,#fff0f6);border:2px dashed #ff9fba;border-radius:34px;padding:clamp(25px,6vw,52px);position:relative;overflow:hidden;box-shadow:8px 10px 0 #f4d4e1}
+.surprise .big{font-size:3.5rem}
+#surpriseMessage{display:none;margin:24px auto 0;max-width:620px;line-height:1.9;background:#fff;padding:22px;border-radius:20px;border:1px solid #ffe0e9}
+#surpriseMessage.show{display:block;animation:pop .35s ease-out}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+.music-pill{position:fixed;right:14px;bottom:14px;z-index:5;background:white;border:2px solid #ffd0df;border-radius:999px;padding:10px 14px;box-shadow:0 4px 14px #5b29321a;color:#a5446b;font-weight:900;display:flex;gap:8px;align-items:center}
+footer{text-align:center;padding:40px 0 70px;color:#ad8796;font-size:.86rem}
+.modal{display:none;position:fixed;inset:0;z-index:10;background:#4b2b3dcc;place-items:center;padding:20px}
+.modal.open{display:grid}
+.modal-box{background:#fffaf5;border-radius:28px;padding:30px;max-width:420px;width:100%;text-align:center;box-shadow:0 20px 60px #2e102d55}
+.modal-box h3{font-size:2rem;color:#e95787;margin:8px}
+.close{float:right;border:0;background:#ffe6ee;border-radius:50%;width:36px;height:36px;color:#8b3f61}
+@media(max-width:650px){.topbar{align-items:flex-start;border-radius:22px}.navlinks{gap:2px}.navlinks a{font-size:.7rem;padding:7px}.story-board{grid-template-columns:1fr}.playlist{grid-template-columns:1fr}.fun-grid{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr;gap:12px}.photo-card:nth-child(3){grid-column:1/-1;width:72%;justify-self:center}.photo-frame{aspect-ratio:4/4.7}.hero{min-height:82svh;padding-top:28px}.hero-panel{border-radius:28px}.music-pill{right:10px;bottom:10px;font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+
+.openwhen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.openwhen-card{border:2px solid white;border-radius:22px;padding:18px 12px;background:#fff;box-shadow:0 6px 0 #f4d6e2;color:var(--ink);text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .15s}
+.openwhen-card:hover{transform:translateY(-3px)}.openwhen-card span{font-size:2rem}.openwhen-card strong{font-size:.92rem}.openwhen-card small{font-size:.76rem;color:#9a7888;line-height:1.4}
+.openwhen-result{margin:18px auto 0;max-width:720px;background:#fff0f6;border:2px dashed #f7b3cd;border-radius:22px;padding:22px;min-height:70px;text-align:center;line-height:1.8}
+.quiz-card{max-width:700px;margin:auto;background:linear-gradient(135deg,#fff,#f8f3ff);text-align:center}
+.quiz-progress{display:inline-block;padding:7px 12px;background:#fff0f6;color:#b44777;border-radius:999px;font-size:.78rem;font-weight:900}
+.quiz-card h3{font-size:1.45rem;margin:20px 0}.quiz-answers{display:grid;grid-template-columns:1fr;gap:10px}
+.quiz-answers button{background:#fff;border:2px solid #f4d6e2;border-radius:16px;padding:13px;color:#6e435b;font-weight:800}.quiz-answers button:hover{background:#fff0f6;border-color:#ff9fba}
+#quizFeedback{color:#a24e76;line-height:1.6;min-height:28px}
+.hug-machine,.voice-card,.mission-card,.bucket-card{max-width:760px;margin:auto;background:#fff;border:2px solid white;border-radius:30px;padding:clamp(22px,5vw,38px);text-align:center;box-shadow:8px 9px 0 #f1d6e2}
+.hug-machine{background:linear-gradient(135deg,#fff0f6,#f1eaff)}
+.hug-orbit{font-size:1.6rem;letter-spacing:.25em}.hug-emoji{font-size:5rem;line-height:1.3;transition:transform .25s}.hug-emoji.hugging{animation:hugBounce .65s ease}
+@keyframes hugBounce{0%,100%{transform:scale(1)}45%{transform:scale(1.25) rotate(-8deg)}75%{transform:scale(.95) rotate(5deg)}}
+.hug-machine h3,.voice-card h3{font-size:1.5rem;margin:12px 0}.hug-machine p,.voice-card p{color:#8c6c7b;line-height:1.7}
+.scratch-wrap{max-width:540px;height:290px;margin:auto;position:relative;border-radius:28px;overflow:hidden;box-shadow:8px 9px 0 #f1d6e2;border:3px solid white}
+.scratch-under{position:absolute;inset:0;background:linear-gradient(135deg,#ffe0eb,#eee4ff);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px}
+.scratch-under h3{font-size:2rem;color:#e84f8a;margin:10px}.scratch-under p{line-height:1.6;max-width:350px}
+#scratchCanvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.mission-card{text-align:left}.mission-task{display:flex;align-items:center;gap:13px;padding:16px 0;border-bottom:1px dashed #f0cddd}.mission-task>span{width:40px;height:40px;border-radius:14px;background:#ffe4ee;color:#c04478;display:grid;place-items:center;font-weight:1000;flex:0 0 40px}.mission-task div{flex:1}.mission-task strong{display:block}.mission-task small{display:block;color:#9a7888;margin-top:4px;line-height:1.4}.mission-task input{width:22px;height:22px;accent-color:#e95787}
+.mission-card>.cta{display:block;margin:22px auto 0}.mission-badge{text-align:center;background:#fff4ce;border-radius:18px;padding:15px;margin-top:16px;font-weight:900;color:#8b6522}
+.bucket-card{text-align:left}.bucket-item{display:flex;align-items:flex-start;gap:12px;padding:14px 8px;border-bottom:1px dashed #f0d8e3;line-height:1.5;cursor:pointer}.bucket-item input{width:20px;height:20px;accent-color:#e95787;flex:0 0 auto;margin-top:2px}.bucket-item input:checked+span{text-decoration:line-through;color:#ad91a0}
+.bucket-add{display:flex;gap:9px;margin-top:20px}.bucket-add input{min-width:0;flex:1;border:2px solid #f3d5e3;border-radius:999px;padding:12px 15px;outline:none}.bucket-add input:focus{border-color:#ee82a7}
+.custom-bucket{padding:12px 8px;border-bottom:1px dashed #f0d8e3;color:#8b4a70}
+.voice-icon{font-size:3rem}.voice-buttons{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:20px}.voice-buttons button{font-size:.88rem}
+@media(max-width:650px){.openwhen-grid{grid-template-columns:1fr 1fr}.voice-buttons{flex-direction:column}.voice-buttons button{width:100%}.scratch-wrap{height:260px}.mission-task{gap:10px}.bucket-add{flex-direction:column}.bucket-add button{width:100%}}
+
+
+.game-shell{max-width:780px;margin:auto;background:#211a3a;color:#fff;border:4px solid #fff;border-radius:20px;padding:clamp(14px,4vw,26px);box-shadow:8px 10px 0 #d7c8fa;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.game-hud{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:.7rem;letter-spacing:.04em;color:#f7cbe0;padding-bottom:14px;border-bottom:1px dashed #8d79b9}
+.game-screen{margin:18px 0;background:linear-gradient(180deg,#31234e,#483268);border:2px solid #9275bf;border-radius:12px;padding:20px 14px;text-align:center}
+.pixel-cloud{font-size:1.2rem}.pixel-title{font-size:clamp(1.4rem,5vw,2.3rem);color:#ffe68d;text-shadow:3px 3px #d94b94;margin:14px 0;font-weight:1000}
+.game-screen p{font-family:system-ui,sans-serif;line-height:1.6;color:#f8eafa;font-size:.9rem}
+.pixel-hearts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:20px 0}
+.pixel-heart{border:0;background:#ff5e9d;color:#fff;font-size:1.65rem;width:46px;height:46px;border-radius:8px;box-shadow:4px 4px #9e3979;image-rendering:pixelated;transition:transform .15s}
+.pixel-heart:hover{transform:translateY(-3px)}.pixel-heart.collected{background:#4d4268;color:#b7a9ca;box-shadow:none;opacity:.55;transform:scale(.85)}
+.game-progress{height:12px;background:#120f24;border:2px solid #9179b7;border-radius:3px;overflow:hidden}.game-progress span{display:block;width:0;height:100%;background:repeating-linear-gradient(90deg,#ff79ae 0 10px,#ffd4e4 10px 14px);transition:width .3s}
+.game-tip{font-size:.68rem!important;letter-spacing:.08em!important;color:#ffe68d!important}
+.game-achievements{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:15px 0}
+.achievement{display:flex;align-items:center;gap:9px;padding:12px 10px;border:1px solid #78649f;border-radius:10px;background:#302647}.achievement>span{font-size:1.5rem}.achievement div{flex:1}.achievement strong{display:block;font-size:.72rem}.achievement small{display:block;color:#c6b5d9;font-size:.62rem;line-height:1.4;margin-top:4px}.achievement>b{font-size:.8rem}.achievement.unlocked{border-color:#ff92bd;background:#49304e}.achievement.unlocked>b{font-size:1rem}
+.unlock-panel,.game-win{background:#33274b;border:2px dashed #8e77b4;border-radius:12px;text-align:center;padding:20px;margin-top:12px}.unlock-icon{font-size:2rem}.unlock-panel h3,.boss-panel h3{color:#ffe68d;margin:8px}.unlock-panel p,.boss-panel p{color:#e2d4ef;font-size:.86rem;line-height:1.6}
+.boss-panel{margin-top:18px;padding:20px;border:2px solid #ff80b1;border-radius:14px;background:#342443;text-align:center}.boss-face{font-size:3.5rem;animation:bossFloat 1.4s ease-in-out infinite alternate}@keyframes bossFloat{to{transform:translateY(-7px)}}.boss-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:16px 0}.boss-actions button{font-size:.78rem;padding:10px 13px}.game-win{color:#ffe68d;border-color:#ffe68d;line-height:1.8}
+.love-things-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.love-thing{background:#fff;border:2px solid white;border-radius:22px;padding:21px 17px;box-shadow:0 6px 0 #f3d8e4}.love-thing:nth-child(2){background:#f4efff;box-shadow:0 6px 0 #d9cafa}.love-thing:nth-child(3){background:#fff4d7;box-shadow:0 6px 0 #f1dfa9}.love-thing:nth-child(4){background:#eaf8f0;box-shadow:0 6px 0 #c8e9d6}.love-thing>span{font-size:2rem}.love-thing h3{font-size:1rem;margin:12px 0 8px}.love-thing p{font-size:.85rem;color:#8c6c7b;line-height:1.65;margin:0}
+.personal-note{max-width:680px;margin:22px auto 0;text-align:center}
+.hug-letter{max-width:760px;margin:auto;background:#fff;border:2px solid white;border-radius:28px;padding:clamp(22px,5vw,38px);box-shadow:8px 9px 0 #f1d6e2}
+.hug-letter-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}.hug-letter-tabs button{border:2px solid #f5cddd;border-radius:999px;background:#fff;padding:10px 15px;font-weight:900;color:#a44b76}.hug-letter-tabs button.active{background:#e95787;color:white;border-color:#e95787}
+.hug-letter-text{display:none;line-height:1.95;white-space:pre-line}.hug-letter-text.active{display:block}
+.dictionary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.dictionary-grid article{background:#fff;border:2px solid white;border-radius:22px;padding:20px;box-shadow:0 6px 0 #f2d6e3}.dictionary-grid article:nth-child(2n){background:#f5efff;box-shadow:0 6px 0 #d9cafa}.dictionary-grid b{font-size:1.2rem;color:#b5487a;display:block}.dictionary-grid span{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#9e8797;margin:4px 0 10px}.dictionary-grid p{font-size:.87rem;line-height:1.65;color:#805f73;margin:0}
+.memory-timeline{max-width:700px;margin:auto;position:relative}.memory-timeline:before{content:"";position:absolute;left:20px;top:15px;bottom:15px;width:3px;background:#f2bdd1;border-radius:3px}.memory-timeline article{position:relative;display:flex;gap:18px;margin:0 0 16px}.timeline-dot{position:relative;z-index:1;flex:0 0 43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#ffdfeb;border:3px solid white;box-shadow:0 0 0 2px #f0b8cf;color:#b44477;font-weight:1000}.timeline-card{flex:1;background:white;border:2px solid white;border-radius:20px;padding:20px;box-shadow:0 6px 0 #f3d7e3}.timeline-card small{font-size:.68rem;letter-spacing:.14em;color:#d15c8c;font-weight:1000}.timeline-card h3{margin:7px 0;font-size:1.12rem}.timeline-card p{margin:0;color:#896b7b;font-size:.9rem;line-height:1.7}
+.love-counter-card{max-width:720px;margin:auto;text-align:center;padding:clamp(25px,6vw,48px);border:2px solid white;border-radius:32px;background:linear-gradient(135deg,#fff0f6,#f1eaff,#fff6dc);box-shadow:8px 10px 0 #e7cfe0}
+.counter-sparkle{font-size:1.6rem}.love-count{font-size:clamp(3.5rem,14vw,7rem);font-weight:1000;letter-spacing:-.08em;color:#e84f8a;text-shadow:3px 4px white;line-height:1.1;margin:16px 0 0}.counter-caption{font-weight:1000;color:#8754ae;letter-spacing:.08em}.love-counter-card>p:last-child{max-width:500px;margin:18px auto 0;line-height:1.7;color:#896b7b}
+@media(max-width:700px){.game-achievements{grid-template-columns:1fr}.love-things-grid{grid-template-columns:1fr 1fr}.dictionary-grid{grid-template-columns:1fr 1fr}.game-hud{font-size:.62rem}.pixel-heart{width:42px;height:42px}}
+@media(max-width:430px){.love-things-grid,.dictionary-grid{grid-template-columns:1fr}.game-shell{padding:12px}.game-screen{padding:17px 10px}}
+
+
+.candle-card{max-width:760px;margin:auto;text-align:center;background:linear-gradient(145deg,#fff1f6,#f4efff,#fff8e9);border:2px solid #fff;border-radius:30px;padding:clamp(24px,5vw,42px);box-shadow:8px 10px 0 #e7cfe0}
+.cake-scene{position:relative;margin:26px auto 22px;width:min(100%,360px);height:245px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.cake{position:relative;width:220px;height:105px;background:linear-gradient(#ff9dbd 0 24%,#fff0f5 24% 34%,#f7a6c3 34% 100%);border:4px solid #fff;border-radius:18px 18px 25px 25px;box-shadow:0 8px 0 #d76d9a;z-index:2}
+.cake:before{content:"";position:absolute;left:-10px;right:-10px;top:-13px;height:25px;border-radius:50%;background:#fff3f8;border:3px solid #fff}
+.cake:after{content:"🍓　🍓　🍓";position:absolute;top:17px;left:0;right:0;font-size:1.1rem}
+.cake-plate{width:280px;height:18px;border-radius:50%;background:#d7c7f4;border:3px solid white;box-shadow:0 5px 0 #b5a0dc;z-index:3}
+.candle-stick{position:absolute;bottom:100px;left:calc(50% - 7px);width:14px;height:65px;border-radius:5px 5px 2px 2px;background:repeating-linear-gradient(135deg,#fff 0 8px,#ff6b9d 8px 15px);border:2px solid #fff;z-index:4}
+.flame{position:absolute;bottom:162px;left:calc(50% - 13px);width:26px;height:38px;background:radial-gradient(ellipse at 50% 68%,#fff8a8 0 20%,#ffbd4a 40%,#ff6a54 72%,transparent 73%);border-radius:60% 40% 55% 45%;transform:rotate(4deg);filter:drop-shadow(0 0 12px #ffb34c);z-index:5;animation:flameFlicker .22s infinite alternate;transform-origin:bottom center}
+@keyframes flameFlicker{from{transform:rotate(-5deg) scale(.94)}to{transform:rotate(5deg) scale(1.06)}}
+.flame.out{animation:flameOut .55s ease forwards}
+@keyframes flameOut{0%{opacity:1;transform:scale(1)}35%{opacity:.9;transform:translateX(22px) scale(.8) rotate(45deg)}100%{opacity:0;transform:translate(42px,-12px) scale(.05) rotate(80deg)}}
+.smoke{position:absolute;bottom:164px;left:calc(50% - 3px);font-size:1.7rem;opacity:0;z-index:6}
+.smoke.show{animation:smokeRise 1.5s ease-out forwards}
+@keyframes smokeRise{0%{opacity:0;transform:translateY(10px) scale(.6)}20%{opacity:.75}100%{opacity:0;transform:translateY(-42px) translateX(12px) scale(1.4)}}
+.candle-count{font-size:clamp(3.5rem,16vw,6rem);font-weight:1000;color:#e84f8a;text-shadow:4px 4px #fff;line-height:1.1;min-height:1.2em;margin:12px 0}
+.candle-status{min-height:50px;line-height:1.7;color:#8754ae;font-weight:800}
+.candle-card.blow-out .cake{animation:cakeCelebrate .6s ease}
+@keyframes cakeCelebrate{30%{transform:rotate(-3deg) scale(1.03)}60%{transform:rotate(3deg) scale(1.05)}100%{transform:rotate(0) scale(1)}}
+.confetti-bit{position:fixed;top:-20px;z-index:100;pointer-events:none;font-size:1.3rem;animation:confettiFall 2.6s linear forwards}
+@keyframes confettiFall{to{transform:translateY(110vh) rotate(650deg);opacity:0}}
+.love-counter-card{max-width:720px;margin:auto;text-align:center;padding:clamp(25px,6vw,48px);border:2px solid white;border-radius:32px;background:linear-gradient(135deg,#fff0f6,#f1eaff,#fff6dc);box-shadow:8px 10px 0 #e7cfe0}
+.love-count{font-size:clamp(3.5rem,14vw,7rem);font-weight:1000;letter-spacing:-.08em;color:#e84f8a;text-shadow:3px 4px white;line-height:1.1;margin:16px 0}
+@media(prefers-reduced-motion:reduce){.flame,.flame.out,.smoke.show,.confetti-bit{animation-duration:.01ms!important}}
+
+</style>
+</head>
+<body>
+<div class="bg-hearts" id="hearts" aria-hidden="true"></div>
+
+
+
+<nav class="topbar" aria-label="Birthday page navigation">
+ <div class="brand">p + p <span>♡</span></div>
+ <div class="navlinks"><a href="#letter">love note</a><a href="#openwhen">open when</a></div>
+</nav>
+<header class="hero wrap">
+ <div class="hero-panel">
+ <div class="sticker">✿ classified: made only for Pulkit ✿</div>
+ <h1>Happy Birthday,<span>Babyboy ♡</span></h1>
+ <p>To my baccha, my pattu, my chellem, my babe, my babieee…<br>your personal birthday universe is officially open. 🧸✨</p>
+ <button class="cta" onclick="document.querySelector('#openwhen').scrollIntoView({behavior:'smooth'})">Enter our little world 💌</button>
+ <div class="love-banner">LOVE U LOADSSSSS 💗💗💗</div>
+ <p class="mini-note">one boy · a million nicknames · an unreasonable amount of pyaar</p>
+ </div>
+</header>
+
+<main>
+<section id="letter">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">from my heart to yours</div><h2>A little love letter 💗</h2><p class="sub">For the boy who has a very special place in my heart.</p></div>
+ <article class="card letter-card">
+ <div id="hindiLetter" class="letter-language active">
+ <p>Happy Birthday, mere Pulkit… mere pattu, mere baccha. 🥹💗
+
+Aaj bas itna chahti hoon ki tum dil se khush raho. Tumhari life mein itni saari achhi cheezein aayein ki tumhe har din muskurane ki koi na koi wajah mil jaaye. Kaash tum ek baar khud ko meri nazron se dekh paate, shayad tab samajh paate ki tum mere liye kitne special ho.
+
+Tumhare liye mere paas kitne saare naam hain, Babyboy, baccha, babe, babieee, pattu, chellem. Har naam ke saath ek alag si feeling judi hai: kabhi masti, kabhi pyaar, kabhi tumhe tang karne ka mann, aur kabhi bas tumhari fikr. 🧸💕
+
+Zindagi hamesha humare plan ke hisaab se nahi chalti, aur har kahaani perfect nahi hoti. Lekin aaj kisi sawaal ya pressure ka din nahi hai. Aaj tumhara din hai. Main chahti hoon ki tum hanso, apna favourite khaana khao, cake ka bada sa piece lo, aur thoda sa khud ko bhi celebrate karo.
+
+Dua hai ki iss naye saal mein tumhe sukoon mile, tumhare sapne poore hon, tumhari mehnat rang laaye, aur mushkil din bhi tumhe todne ke bajaye aur strong banaayein. Jab tum thak jao, tumhe aaraam mile; jab confused ho, raasta mile; aur jab khush ho, toh woh khushi bahut door tak tumhare saath rahe.
+
+Aur ek dua jo mere dil ke bahut kareeb hai, main chahti hoon Bhagwan tumhe duniya ki har achhi cheez de, tumhare saare sapne poore kare, tumhe woh saari khushiyan de jinke tum haqdar ho, aur mujhe tumhara saath de. Main chahti hoon ki humare beech chahe kitne bhi mushkil raaste aayein, hum unse bhaagne ke bajaye saath milkar guzrein. Raasta lamba ho, waqt zyada lage, ya kabhi kadam ladkhada bhi jaayein, bas hum ek dusre ka haath na chhodein.
+
+Main nahi chahti ki humari kahaani hamesha aasaan ho, bas itna chahti hoon ki jab bhi zindagi mushkil ho, hum ek dusre ke liye safe place ban sakein. Khushi mein saath hansna, mushkil waqt mein ek dusre ko sambhalna, galti ho toh samajhne ki koshish karna, aur har naye din ek dusre ko phir se choose karna. Mere liye pyaar sirf achhe dinon mein saath rehna nahi, balki mushkil dinon mein bhi patience, respect aur pyaar ke saath ek dusre ka haath thaame rehna hai.
+
+Main chahti hoon ki hum jaldi mein kahin pahunchne ki fikr na karein. Bas apni pace par, ek ek kadam karke, aakhri tak saath chal sakein. Chahe kitna bhi waqt lage, chahe kitni baar ruk kar saans leni pade, meri dua hai ki hum dono ek dusre ka haath pakad kar aage badhein. Aur jab kabhi duniya bahut heavy lage, toh hum ek dusre ko yaad dilayein ki hum sab kuch ek hi din mein solve nahi kar sakte, lekin pyaar aur himmat ke saath ek ek din zaroor nikaal sakte hain. 🫶💗
+
+Humari jo bhi achhi yaadein hain, jo hansi, jo comfort aur jo moments mere liye special rahe, main un sabko pyaar se yaad rakhungi. Tum meri kahaani ka ek meaningful hissa rahe ho, aur main aaj tumhare liye sirf achhi cheezein wish karna chahti hoon.
+
+Happy Birthday, mere chellem. Aise hi apne silly self rehna, apna khayaal rakhna, aur haan, meri taraf se bhi extra cake kha lena. Kaash main abhi tumhe ek tight sa hug de paati. 🥹🎂💗
+
+Bas meri chhoti si dua hai: tum hamesha khush raho, healthy raho, aur tumhare dil ki achhi wishes poori hon. Janamdin mubarak, pattu. ♡\n\nAur haan, ek baat yaad rakhna, LOVE U LOADSSSSS, mere Babyboy. Itna saara pyaar ki words bhi kam pad jaayein. 💗🫶</p>
+ </div>
+ <div class="signature">oru chinna hug, romba paasam ♡</div>
+ </article>
+ </div>
+</section>
+
+
+
+
+
+<section id="fun">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">important birthday research</div><h2>Babyboy.exe is loading… 🧸</h2><p class="sub">A few very serious tests to check whether you are still the cutest nuisance alive.</p></div>
+ <div class="fun-grid">
+ <div class="fun-card"><div class="emoji">💗</div><h3>Love-o-meter</h3><p>Scientific accuracy: absolutely questionable.</p><button class="secondary" id="loveMeterBtn" type="button">Measure love</button></div>
+ <div class="fun-card"><div class="emoji">🧁</div><h3>Birthday mission</h3><p>Your official task for today.</p><button class="secondary" id="missionBtn" type="button">Give me a mission</button></div>
+ <div class="fun-card"><div class="emoji">🫂</div><h3>Emergency hug</h3><p>For when a normal text just isn't enough.</p><button class="secondary" id="hugBtn" type="button">Send hug</button></div>
+ </div>
+ <div class="fun-result" id="funResult" aria-live="polite">Tap any button. Yes, this is mandatory birthday homework. 😌</div>
+ </div>
+</section>
+
+
+<section id="candle">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">make a birthday wish</div><h2>Ready, Babyboy? 🎂</h2><p class="sub">Close your eyes, make a tiny wish, and get ready to blow out your candle. I'll count you in. 💗</p></div>
+ <div class="candle-card" id="candleCard">
+ <div class="cake-scene" aria-label="A birthday cake with one lit candle">
+ <div class="flame" id="candleFlame"></div><div class="smoke" id="candleSmoke">〰️</div><div class="candle-stick"></div><div class="cake"></div><div class="cake-plate"></div>
+ </div>
+ <div class="candle-count" id="candleCount" aria-live="polite">♡</div>
+ <p class="candle-status" id="candleStatus">Make a wish and tap the button when you're ready. No peeking! 🥹</p>
+ <button class="cta" id="blowCandleBtn" type="button">COUNT ME IN! 🎉</button>
+ <button class="secondary" id="relightCandleBtn" type="button" style="margin-left:8px">Again? ♡</button>
+ </div>
+ </div>
+</section>
+
+<section id="countdown">
+ <div class="wrap">
+ <div class="card countdown-card">
+ <div class="kicker">the big day</div><h2>Counting down to you 🎂</h2>
+ <p class="sub">Because someone this cute deserves a whole countdown.</p>
+ <div class="countdown" id="countdownDisplay"><div class="timebox"><strong>♡</strong><span>days</span></div><div class="timebox"><strong>♡</strong><span>hours</span></div><div class="timebox"><strong>♡</strong><span>minutes</span></div><div class="timebox"><strong>♡</strong><span>seconds</span></div></div>
+ <p id="countdownMessage" class="smallprint">Set his birthday date in index.html to activate the countdown.</p>
+ </div>
+ </div>
+</section>
+
+
+<section id="openwhen">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">little notes for every kind of day</div><h2>Open when… 💌</h2><p class="sub">Pick the note you need, Babyboy. Different days need different kinds of pyaar.</p></div>
+ <div class="openwhen-grid">
+ <button class="openwhen-card" data-note="miss"><span>🥺</span><strong>When you miss me</strong><small>ek virtual jhappi incoming…</small></button>
+ <button class="openwhen-card" data-note="sad"><span>🫂</span><strong>When you're sad</strong><small>you don't have to be okay every day</small></button>
+ <button class="openwhen-card" data-note="sleep"><span>🌙</span><strong>When you can't sleep</strong><small>one tiny goodnight note</small></button>
+ <button class="openwhen-card" data-note="hug"><span>💗</span><strong>When you need a hug</strong><small>tap for the biggest squeeze</small></button>
+ </div>
+ <div class="openwhen-result" id="openWhenResult" aria-live="polite">Your secret note will appear here. ♡</div>
+ </div>
+</section>
+
+
+
+<section id="hug">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">for emergencies of the heart</div><h2>The virtual hug machine 🫂</h2><p class="sub">Side effects may include smiling, blushing, and receiving excessive pyaar.</p></div>
+ <div class="hug-machine">
+ <div class="hug-orbit">💗　✨　💗</div><div class="hug-emoji" id="hugEmoji">🧸</div>
+ <h3 id="hugTitle">Need a hug, baccha?</h3>
+ <p id="hugText">Press the button and collect one extra-squeeezy Pri hug.</p>
+ <button class="cta" id="hugButton">SEND ME A HUG ♡</button>
+ </div>
+ </div>
+</section>
+
+<section id="scratch">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">shhh… secret birthday wish</div><h2>Scratch to reveal ✨</h2><p class="sub">Rub the card with your finger or mouse to uncover what's underneath.</p></div>
+ <div class="scratch-wrap">
+ <div class="scratch-under"><div style="font-size:2.5rem">💗🎂💗</div><h3>LOVE U LOADSSSSS!</h3><p>Happy birthday, my Babyboy. You're loved more than this little page can fit. 🥹</p></div>
+ <canvas id="scratchCanvas" aria-label="Scratch this card to reveal a birthday message"></canvas>
+ </div>
+ <p class="smallprint" style="text-align:center;margin-top:12px">Tip: on a phone, swipe your finger across the card.</p>
+ </div>
+</section>
+
+<section id="mission">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">operation: birthday boy</div><h2>Your birthday mission 🎮</h2><p class="sub">Complete all three very serious tasks to earn the official Babyboy birthday badge.</p></div>
+ <div class="mission-card">
+ <div class="mission-task"><span>01</span><div><strong>Make your birthday wish</strong><small>Close your eyes for 3 seconds. No cheating!</small></div><input type="checkbox" id="mission1" aria-label="Complete mission one"></div>
+ <div class="mission-task"><span>02</span><div><strong>Smile at your screen</strong><small>Yes, a real smile. I can feel it from here. 😌</small></div><input type="checkbox" id="mission2" aria-label="Complete mission two"></div>
+ <div class="mission-task"><span>03</span><div><strong>Accept unlimited pyaar</strong><small>Non-refundable. No returns. No exchanges.</small></div><input type="checkbox" id="mission3" aria-label="Complete mission three"></div>
+ <button class="cta" id="missionComplete">Claim my birthday badge 🏆</button>
+ <div id="missionBadge" class="mission-badge" aria-live="polite">🏅 Birthday mission waiting to be completed!</div>
+ </div>
+ </div>
+</section>
+
+<section id="bucketlist">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">for all the tomorrows</div><h2>Our future bucket list 🌷</h2><p class="sub">Little dreams to save for someday. Add your own too, this list is yours to imagine.</p></div>
+ <div class="bucket-card">
+ <label class="bucket-item"><input type="checkbox"> <span>☕ Have a long, slow coffee date</span></label>
+ <label class="bucket-item"><input type="checkbox"> <span>🌅 Watch a sunset together</span></label>
+ <label class="bucket-item"><input type="checkbox"> <span>🍰 Share cake and steal each other's bites</span></label>
+ <label class="bucket-item"><input type="checkbox"> <span>🎶 Make a playlist of our favourite songs</span></label>
+ <label class="bucket-item"><input type="checkbox"> <span>📸 Take a photo we can look back at years later</span></label>
+ <label class="bucket-item"><input type="checkbox"> <span>🗺️ Explore somewhere new together</span></label>
+ <div class="bucket-add"><input id="bucketInput" placeholder="Add a little dream of your own…" maxlength="100"><button class="secondary" id="bucketAdd">Add +</button></div>
+ <div id="customBucketItems"></div>
+ <p class="smallprint">Your checked items stay on this page while it is open. They aren't sent to anyone.</p>
+ </div>
+ </div>
+</section>
+
+
+
+
+<section id="love-counter">
+ <div class="wrap">
+ <div class="section-head"><div class="kicker">a very scientific measurement</div><h2>How much do I love you? 💗</h2><p class="sub">The counter may be a little dramatic. It is still not dramatic enough.</p></div>
+ <div class="love-counter-card">
+ <div style="font-size:1.7rem">💗 ✨ 💗</div>
+ <div class="love-count" id="loveCount">0+</div>
+ <p class="counter-caption">LOVE U LOADSSSSS</p>
+ <p>Tap the button. Every tap adds more love, and there is no maximum. Obviously.</p>
+ <button class="cta" id="loveCountBtn" type="button">MORE LOVE!! 💞</button>
+ </div>
+ </div>
+</section>
+
+<section id="surprise">
+ <div class="wrap">
+ <div class="surprise">
+ <div class="big">🎁</div><div class="kicker">pssst… one last thing</div><h2>You've got a surprise!</h2>
+ <p class="sub">I hid a tiny birthday wish just for you. Are you ready, babe?</p>
+ <br><button class="cta" id="revealBtn">Tap to unwrap ♡</button>
+ <div id="surpriseMessage">🎉 <b>HAPPY BIRTHDAY, MY BABYBOY!</b> 🎉<br><br>If I could gift you one thing, it would be the ability to see yourself through the eyes of the people who care about you, so you could understand how special you are. Keep dreaming big, keep being your wonderfully silly self, and please save me a piece of cake. 🥹🍰<br><br>Sending you the biggest virtual hug, a forehead kiss, and a million tiny hearts. 💗💗💗<br><br><span style="font-size:1.5rem;color:#e84f8a;font-weight:1000">LOVE U LOADSSSSS, BABYBOY!!</span></div>
+ </div>
+ </div>
+</section>
+</main>
+<footer>made with ♡, a little silliness, and an unreasonable amount of pyaar<br><span id="footerLine">for my Babyboy · LOVE U LOADSSSSS 💗</span></footer>
+
+
+
+
+<script>
+(function () {
+ const $ = (id) => document.getElementById(id);
+ const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+ const setText = (id, value) => { const el = $(id); if (el) el.textContent = value; };
+
+ // Gentle floating hearts in the background.
+ const heartField = $('hearts');
+ if (heartField && !heartField.dataset.ready) {
+ heartField.dataset.ready = 'yes';
+ for (let i = 0; i < 18; i++) {
+ const heart = document.createElement('span');
+ heart.className = 'float';
+ heart.textContent = pick(['♡','♥','✿','💗']);
+ heart.style.left = (Math.random() * 100) + '%';
+ heart.style.animationDuration = (10 + Math.random() * 12) + 's';
+ heart.style.animationDelay = (-Math.random() * 18) + 's';
+ heart.style.fontSize = (14 + Math.random() * 20) + 'px';
+ heartField.appendChild(heart);
+ }
+ }
+
+ // Hero button and smooth in-page navigation.
+ document.querySelectorAll('a[href^="#"]').forEach(a => {
+ a.addEventListener('click', e => {
+ const target = document.querySelector(a.getAttribute('href'));
+ if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+ });
+ });
+ document.querySelectorAll('.hero-panel button[onclick]').forEach(btn => {
+ btn.removeAttribute('onclick');
+ btn.addEventListener('click', () => $('openwhen')?.scrollIntoView({behavior:'smooth'}));
+ });
+
+ // Love letter language tabs.
+ const englishTab = $('englishTab'), hindiTab = $('hindiTab');
+ function chooseLetter(lang) {
+ if ($('englishLetter')) $('englishLetter').classList.toggle('active', lang === 'en');
+ if ($('hindiLetter')) $('hindiLetter').classList.toggle('active', lang === 'hi');
+ englishTab?.classList.toggle('active', lang === 'en');
+ hindiTab?.classList.toggle('active', lang === 'hi');
+ }
+ englishTab?.addEventListener('click', () => chooseLetter('en'));
+ hindiTab?.addEventListener('click', () => chooseLetter('hi'));
+
+ // Three quick birthday buttons.
+ $('loveMeterBtn')?.addEventListener('click', () => {
+ const results = ['💗 Reading complete: 999999999% pyaar. The meter has given up.','🧪 Scientific result: dangerously, ridiculously, LOADSSSSS in love.','📈 Error 404: maximum love limit not found. Try again, Babyboy!','💞 Love level: beyond the universe. Please remain cute.'];
+ setText('funResult', pick(results));
+ });
+ $('missionBtn')?.addEventListener('click', () => {
+ setText('funResult', pick(['🎯 Mission: eat something yummy and save me an imaginary bite.','🧁 Mission: smile for 5 seconds. Yes, I am checking.','🫶 Mission: take a deep breath and remember you deserve good things.','🎮 Mission unlocked: collect one compliment and refuse to argue with it.']));
+ });
+ $('hugBtn')?.addEventListener('click', () => {
+ setText('funResult', '🫂 Sending one gigantic, squishy, never-ending virtual hug. Squeeze squeeze, Babyboy! 💗');
+ if ($('hugEmoji')) { $('hugEmoji').classList.remove('hugging'); void $('hugEmoji').offsetWidth; $('hugEmoji').classList.add('hugging'); }
+ });
+
+ // Open-when letters.
+ const notes = {
+ miss: 'If you miss me right now, imagine me sitting beside you, stealing a little space and asking for one more minute together. Idhar se ek tight si jhappi. You are loved, baccha. 💗',
+ sad: 'You do not have to solve everything today. Take a breath, drink some water, and be gentle with yourself. Tumhe har waqt strong banne ki zaroorat nahi hai. One small step at a time, okay? 🫂',
+ sleep: 'Close your eyes, relax your shoulders, and let the day be done. I hope your dreams are soft and your heart feels a little lighter. Goodnight, pattu. 🌙',
+ hug: 'Arms wrapped around you… one forehead kiss… and a very stubborn refusal to let go too soon. Kaash abhi ek real hug de paati. Until then, consider yourself officially squished. 🧸💞'
+ };
+ document.querySelectorAll('.openwhen-card').forEach(btn => btn.addEventListener('click', () => {
+ const result = $('openWhenResult');
+ if (result) { result.textContent = notes[btn.dataset.note] || 'Sending you all my pyaar. 💗'; result.classList.remove('pop'); void result.offsetWidth; result.classList.add('pop'); }
+ }));
+
+ // Virtual hug machine.
+ $('hugButton')?.addEventListener('click', () => {
+ if ($('hugEmoji')) { $('hugEmoji').classList.remove('hugging'); void $('hugEmoji').offsetWidth; $('hugEmoji').classList.add('hugging'); }
+ setText('hugTitle', pick(['HUG DELIVERED! 🫂','SQUEEEEEZE, BABYBOY! 💗','One extra-squishy hug for pattu! 🧸']));
+ setText('hugText', pick(['Delivery status: wrapped in pyaar. No returns accepted. 💞','Imagine my arms around you for a long, long moment.','Hug strength: 1000/10. Forehead kiss included. 😚']));
+ burstHearts(14);
+ });
+
+ // Birthday mission badge.
+ $('missionComplete')?.addEventListener('click', () => {
+ const done = ['mission1','mission2','mission3'].filter(id => $(id)?.checked).length;
+ const badge = $('missionBadge');
+ if (badge) badge.textContent = done === 3 ? '🏆 MISSION COMPLETE! Official Birthday Cutie unlocked. Claim unlimited pyaar and cake! 💗' : `🎮 ${done}/3 missions complete, finish the remaining ${3-done} to unlock your badge!`;
+ if (done === 3) burstHearts(22);
+ });
+
+ // Future bucket list: add a real checkbox item.
+ $('bucketAdd')?.addEventListener('click', () => {
+ const input = $('bucketInput'), list = $('customBucketItems');
+ const value = input?.value.trim();
+ if (!value || !list) { if (input) { input.focus(); input.placeholder = 'Type a little dream first ♡'; } return; }
+ const label = document.createElement('label'); label.className = 'bucket-item';
+ const checkbox = document.createElement('input'); checkbox.type = 'checkbox';
+ const span = document.createElement('span'); span.textContent = '🌷 ' + value;
+ label.append(checkbox, span); list.appendChild(label); input.value = ''; input.placeholder = 'Add another little dream…';
+ });
+ $('bucketInput')?.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('bucketAdd')?.click(); } });
+
+ // Scratch-to-reveal card.
+ const canvas = $('scratchCanvas');
+ if (canvas) {
+ const ctx = canvas.getContext('2d');
+ let drawing = false, erased = 0;
+ function paintCover() {
+ const rect = canvas.getBoundingClientRect(), dpr = Math.max(1, window.devicePixelRatio || 1);
+ canvas.width = Math.max(1, Math.round(rect.width * dpr));
+ canvas.height = Math.max(1, Math.round(rect.height * dpr));
+ ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+ const grad = ctx.createLinearGradient(0, 0, rect.width, rect.height);
+ grad.addColorStop(0, '#ff9fc0'); grad.addColorStop(1, '#bba5ef');
+ ctx.globalCompositeOperation = 'source-over'; ctx.fillStyle = grad; ctx.fillRect(0,0,rect.width,rect.height);
+ ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.font = '900 21px system-ui';
+ ctx.fillText('SCRATCH HERE ✨', rect.width/2, rect.height/2);
+ ctx.font = '34px system-ui'; ctx.fillText('♡', rect.width/2, rect.height/2 + 42);
+ erased = 0;
+ }
+ function scratch(e) {
+ if (!drawing) return;
+ const rect = canvas.getBoundingClientRect();
+ const point = e.touches ? e.touches[0] : e;
+ const x = point.clientX - rect.left, y = point.clientY - rect.top;
+ ctx.globalCompositeOperation = 'destination-out';
+ ctx.beginPath(); ctx.arc(x,y,23,0,Math.PI*2); ctx.fill();
+ erased++;
+ if (erased > 35) { canvas.style.opacity = '0'; canvas.style.pointerEvents = 'none'; }
+ }
+ canvas.addEventListener('pointerdown', e => { drawing = true; canvas.setPointerCapture?.(e.pointerId); scratch(e); });
+ canvas.addEventListener('pointermove', scratch);
+ ['pointerup','pointercancel','pointerleave'].forEach(ev => canvas.addEventListener(ev, () => { drawing = false; }));
+ window.addEventListener('resize', () => { if (canvas.style.opacity !== '0') paintCover(); });
+ paintCover();
+ }
+
+ // Countdown to October 19, 2026 (local browser time).
+ function updateCountdown() {
+ const display = $('countdownDisplay'), msg = $('countdownMessage');
+ if (!display) return;
+ const target = new Date(2026, 9, 19, 0, 0, 0);
+ const now = new Date();
+ let diff = target - now;
+ if (diff <= 0) {
+ display.innerHTML = '<div class="timebox"><strong>🎂</strong><span>HAPPY</span></div><div class="timebox"><strong>♡</strong><span>BIRTHDAY</span></div>';
+ if (msg) msg.textContent = 'It is your day, Babyboy! Make a wish. 💗';
+ return;
+ }
+ const days = Math.floor(diff / 86400000); diff %= 86400000;
+ const hours = Math.floor(diff / 3600000); diff %= 3600000;
+ const minutes = Math.floor(diff / 60000); const seconds = Math.floor((diff % 60000) / 1000);
+ display.innerHTML = [[days,'days'],[hours,'hours'],[minutes,'minutes'],[seconds,'seconds']].map(([n,l]) => `<div class="timebox"><strong>${String(n).padStart(2,'0')}</strong><span>${l}</span></div>`).join('');
+ if (msg) msg.textContent = 'One more little moment closer to your day. ♡';
+ }
+ updateCountdown(); setInterval(updateCountdown, 1000);
+
+ // Reveal surprise.
+ $('revealBtn')?.addEventListener('click', () => {
+ const message = $('surpriseMessage');
+ if (message) { message.classList.add('show'); $('revealBtn').textContent = 'Surprise opened! 💗'; $('revealBtn').disabled = true; burstHearts(28); }
+ });
+
+ // Infinite love counter.
+ let love = 0;
+ $('loveCountBtn')?.addEventListener('click', () => {
+ love += 101 + Math.floor(Math.random() * 899);
+ const count = $('loveCount');
+ if (count) count.textContent = love.toLocaleString() + '+';
+ burstHearts(6);
+ });
+
+ // Candle countdown: 3, 2, 1, then the flame blows out automatically.
+ let candleTimer = null, candleDone = false;
+ function resetCandle() {
+ if (candleTimer) clearTimeout(candleTimer);
+ candleTimer = null; candleDone = false;
+ $('candleFlame')?.classList.remove('out');
+ $('candleSmoke')?.classList.remove('show');
+ $('candleCard')?.classList.remove('blow-out');
+ const flame = $('candleFlame'); if (flame) flame.style.display = 'block';
+ const canvas = $('candleCount'); if (canvas) canvas.textContent = '♡';
+ setText('candleStatus', 'Make a wish and tap the button when you are ready. No peeking! 🥹');
+ const button = $('blowCandleBtn'); if (button) { button.disabled = false; button.textContent = 'COUNT ME IN! 🎉'; }
+ }
+ $('blowCandleBtn')?.addEventListener('click', () => {
+ if (candleTimer || candleDone) return;
+ const button = $('blowCandleBtn'); button.disabled = true;
+ setText('candleStatus', 'Close your eyes, make a wish… 💫');
+ const steps = ['3','2','1'];
+ let i = 0;
+ function tick() {
+ setText('candleCount', steps[i]);
+ setText('candleStatus', i === 0 ? 'Three… think of your wish! ✨' : i === 1 ? 'Two… hold that wish close. 💗' : 'One… get ready to blow! 🌬️');
+ i++;
+ if (i < steps.length) candleTimer = setTimeout(tick, 1000);
+ else candleTimer = setTimeout(() => {
+ setText('candleCount', '💨');
+ $('candleFlame')?.classList.add('out');
+ $('candleSmoke')?.classList.add('show');
+ $('candleCard')?.classList.add('blow-out');
+ setText('candleStatus', 'WISH MADE! Happy birthday, Babyboy! May something beautiful find you this year. 🎂💗');
+ button.textContent = 'WISH SENT! 💖';
+ candleDone = true; candleTimer = null; burstHearts(38);
+ }, 900);
+ }
+ tick();
+ });
+ $('relightCandleBtn')?.addEventListener('click', resetCandle);
+
+ // Confetti/heart burst.
+ function burstHearts(amount) {
+ const symbols = ['💗','💖','✨','💕','🌸','🎉'];
+ for (let i = 0; i < amount; i++) {
+ const bit = document.createElement('span');
+ bit.className = 'confetti-bit'; bit.textContent = pick(symbols);
+ bit.style.left = (Math.random()*100) + 'vw';
+ bit.style.animationDelay = (Math.random()*.45) + 's';
+ bit.style.fontSize = (12 + Math.random()*18) + 'px';
+ document.body.appendChild(bit);
+ setTimeout(() => bit.remove(), 3500);
+ }
+ }
+})();
+</script>
+
+</body>
+</html>
